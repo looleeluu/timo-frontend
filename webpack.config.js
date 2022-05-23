@@ -12,6 +12,7 @@ module.exports = (env) => {
 
   return {
     mode: environment,
+    devtool: isDevelopment ? "inline-source-map" : "source-map",
     devServer: {
       static: {
         directory: PATH_DIST,
@@ -82,7 +83,7 @@ module.exports = (env) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: path.join(PATH_SOURCE, "./index.html"),
+        template: "./index.html",
       }),
       new CleanWebpackPlugin(),
     ],
