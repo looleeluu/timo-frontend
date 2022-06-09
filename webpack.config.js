@@ -7,7 +7,6 @@ const PATH_DIST = path.join(__dirname, "./dist");
 
 module.exports = (env) => {
   const environment = env.environment;
-  const isProduction = environment === "production";
   const isDevelopment = environment === "development";
 
   return {
@@ -36,6 +35,10 @@ module.exports = (env) => {
     module: {
       rules: [
         {
+          test: /\.s?[ac]ss$/,
+          use: ["style-loader", "css-loader", "sass-loader"],
+        },
+        {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/, // Don't apply to files residing in node_modules
           use: {
@@ -61,10 +64,6 @@ module.exports = (env) => {
           },
         },
         {
-          test: /\.scss$/,
-          use: ["style-loader", "css-loader", "sass-loader"],
-        },
-        {
           test: /\.png$/,
           use: [
             {
@@ -78,6 +77,10 @@ module.exports = (env) => {
         {
           test: /\.svg$/,
           use: "file-loader",
+        },
+        {
+          test: /\.(woff|woff2|eot|ttf|otf)$/i,
+          type: "asset/resource",
         },
       ],
     },
