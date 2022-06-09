@@ -1,0 +1,12 @@
+export { HomeIcon } from "./Home.jsx";
+export { MiniLogo } from "./MiniLogo.jsx";
+export { TelephoneIcon } from "./Telephone.jsx";
+export { MainLogo } from "./MainLogo.jsx";
+export { Question } from "./Question.jsx";
+export { Tassel } from "./Tassel.jsx";
+export { Mail } from "./Mail.jsx";
+export { Geolocation } from "./Geolocation.jsx";
+export { Sun } from "./Sun.jsx";
+export { CameraReels } from "./CameraReels.jsx";
+export { Network } from "./Network.jsx";
+export { Microphone } from "./Microphone.jsx";

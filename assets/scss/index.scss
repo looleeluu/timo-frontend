@@ -1,0 +1,55 @@
+@import "variables.scss";
+
+@font-face {
+  font-family: "Helvetica Neue Cyr Roman";
+  src: local("Helvetica Neue Cyr Roman"), url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Cyr Bold";
+  src: local("Helvetica Neue Cyr Bold"), url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Asgard Trial Wide Medium";
+  src: local("Asgard Trial Wide Medium"), url("../fonts/AsgardTrial/AsgardTrial-WideMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/Inter/inter-v11-latin-regular.woff') format('woff')
+}
+
+body {
+  margin: 0;
+  background: $dark;
+}
+
+p,
+span {
+  margin: 0;
+  font-family: "Helvetica Neue Cyr Roman", Helvetica, sans-serif;
+  line-height: 32px;
+  color: $white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: "Asgard Trial Wide Medium", Helvetica, sans-serif;
+  color: $white;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.card-title {
+  font-family: 'Inter', Helvetica, sans-serif;
+  font-weight: 800;
+}

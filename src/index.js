@@ -1,9 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./App.scss";
+import { createRoot } from "react-dom/client";
+import { MainPage } from "./components/MainPage/index.jsx";
+import "../assets/scss/index.scss";
 
-function Root() {
-  return <h1>Hello, world.</h1>;
-}
+const container = document.getElementById("root");
+const root = createRoot(container);
 
-ReactDOM.render(<Root />, document.getElementById("root"));
+root.render(<MainPage />);

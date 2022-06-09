@@ -1,0 +1,19 @@
+@import "../../../assets/scss/variables.scss";
+
+.direct-card-container {
+  width: 270px;
+  height: 410px;
+  border: 1px solid $purple-lighter;
+
+  .icon-contaier {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    background: linear-gradient(45deg, $purple, $purple-lighter);
+  }
+
+  .title-layout {
+    height: 50px;
+    line-height: 24px;
+  }
+}

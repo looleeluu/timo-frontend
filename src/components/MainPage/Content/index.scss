@@ -1,0 +1,24 @@
+@import "../../../../assets/scss/variables.scss";
+
+.main-text {
+  padding-top: 65px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.purple-btn {
+  background-color: $purple;
+  border: unset;
+
+  &:hover {
+    background-color: $purple-light;
+  }
+
+  &:focus {
+    background-color: $purple-lighter;
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient($dark, $purple, $dark);
+}
