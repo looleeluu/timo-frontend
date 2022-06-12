@@ -11,9 +11,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export const Header = () => {
   return (
     <header>
-      <Container className="header" fluid>
+      <Container className="header">
         <Row>
-          <Col md={{ offset: 1, span: 1 }} style={{ marginRight: 94 }}>
+          <Col md={{ span: 1 }}>
             <MiniLogo />
           </Col>
           <Col md={{ offset: 1, span: 5 }}>
@@ -39,7 +39,7 @@ export const Header = () => {
               </Col>
             </Row>
           </Col>
-          <Col md={{ offset: 1, span: 2 }} style={{ paddingTop: "38px" }}>
+          <Col md={{ offset: 2, span: 3 }} style={{ paddingTop: "38px" }}>
             <div className="icon-block">
               <TelephoneIcon />
               <span style={{ paddingLeft: 7 }}>238-13-49, 273-83-49</span>

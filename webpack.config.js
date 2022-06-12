@@ -90,5 +90,11 @@ module.exports = (env) => {
       }),
       new CleanWebpackPlugin(),
     ],
+    resolve: {
+      alias: {
+        Assets: path.resolve(__dirname, "assets"),
+        Components: path.resolve(__dirname, "src/components"),
+      },
+    },
   };
 };

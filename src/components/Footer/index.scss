@@ -1,0 +1,29 @@
+@import "Assets/scss/variables.scss";
+
+.footer-container {
+  background: $purple-gradient;
+
+  h1,
+  p,
+  span {
+    color: black;
+  }
+
+  .footer-title {
+    font-weight: 550;
+    font-size: 24px;
+    padding-bottom: 32px;
+  }
+
+  .footer-contacts {
+    div {
+      padding-bottom: 24px;
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 20px;
+      padding-left: 8px;
+    }
+  }
+}

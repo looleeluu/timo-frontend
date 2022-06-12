@@ -3,8 +3,8 @@ import { Row, Col } from "react-bootstrap";
 
 export const SecondSlide = () => (
   <Row style={{ marginTop: 150 }}>
-    <Col md={{ offset: 1 }}>
-      <h1>МЕДИА ЭТО ВАЖНО</h1>
+    <Col>
+      <h1 className="h-padding">МЕДИА ЭТО ВАЖНО</h1>
       <p className="main-text">
         Сфера медиа стала неотлимой частью жизни общества. Средства массовой
         информации формируют наши вкусы, взгляды и интересы. Медиа-специалисты

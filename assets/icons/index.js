@@ -10,3 +10,8 @@ export { Sun } from "./Sun.jsx";
 export { CameraReels } from "./CameraReels.jsx";
 export { Network } from "./Network.jsx";
 export { Microphone } from "./Microphone.jsx";
+export { Telegram } from "./Telegram.jsx";
+export { Vkontakte } from "./Vkontakte.jsx";
+export { Pinterest } from "./Pinterest.jsx";
+export { TelephoneFill } from "./TelephoneFill.jsx";
+export { MailFill } from "./MailFill.jsx";

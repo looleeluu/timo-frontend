@@ -1,12 +1,12 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { Question } from "../../../../assets/icons/index.js";
+import { Question } from "Assets/icons/index.js";
 import "bootstrap";
 
 export const WhatYouLearn = () => {
   return (
     <Row style={{ marginTop: 250 }}>
-      <Col md={{ offset: 1, span: 3 }}>
+      <Col md={{ span: 4 }}>
         <Question />
       </Col>
       <Col md={{ span: 1 }}>
@@ -14,8 +14,8 @@ export const WhatYouLearn = () => {
           style={{ height: "100%", width: 3, backgroundColor: "white" }}
         ></div>
       </Col>
-      <Col md={6}>
-        <h1>ЧЕМУ ТЕБЯ НАУЧАТ?</h1>
+      <Col md={7}>
+        <h1 className="h-padding">ЧЕМУ ТЕБЯ НАУЧАТ?</h1>
         <p className="main-text">
           В процессе обучения будущих профессионалов в сфере мультимедиа
           факультет использует новейшие образовательные технологии. Практика
