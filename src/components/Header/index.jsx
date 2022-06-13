@@ -1,12 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  MiniLogo,
-  HomeIcon,
-  TelephoneIcon,
-} from "../../../assets/icons/index.js";
+import { MiniLogo, HomeIcon, TelephoneIcon } from "@assets/icons/index.js";
 import "./index.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Header = () => {
   return (

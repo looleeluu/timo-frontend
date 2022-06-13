@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { Header } from "Components/Header/index.jsx";
-import { Footer } from "Components/Footer/index.jsx";
+import { Header } from "@components/Header/index.jsx";
+import { Footer } from "@components/Footer/index.jsx";
 import {
   Greetings,
   FirstSlide,
@@ -10,7 +10,7 @@ import {
   Contacts,
   DeanOffice,
 } from "./Content/index.js";
-import "Assets/scss/index.scss";
+import "@assets/scss/index.scss";
 
 export const MainPage = () => {
   return (

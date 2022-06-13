@@ -5,15 +5,15 @@ import {
   CameraReels,
   Network,
   Microphone,
-} from "Assets/icons/index.js";
-import dubover from "Assets/images/1-dubover.png";
-import ushenko from "Assets/images/2-ushenko.png";
-import khristuk from "Assets/images/3-khristuk.png";
-import karoyan from "Assets/images/4-karoyan.png";
-import panesh from "Assets/images/5-panesh.png";
-import tihinya from "Assets/images/6-tihinya.png";
-import voskoboinikov from "Assets/images/7-voskoboinikov.png";
-import kostrub from "Assets/images/8-kostrub.png";
+} from "@assets/icons/index.js";
+import dubover from "@assets/images/1-dubover.png";
+import ushenko from "@assets/images/2-ushenko.png";
+import khristuk from "@assets/images/3-khristuk.png";
+import karoyan from "@assets/images/4-karoyan.png";
+import panesh from "@assets/images/5-panesh.png";
+import tihinya from "@assets/images/6-tihinya.png";
+import voskoboinikov from "@assets/images/7-voskoboinikov.png";
+import kostrub from "@assets/images/8-kostrub.png";
 
 export const contactsData = [
   {

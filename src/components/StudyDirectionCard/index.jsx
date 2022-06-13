@@ -1,8 +1,7 @@
 import React from "react";
+import { Mail, TelephoneIcon, Geolocation } from "@assets/icons/index.js";
+
 import "./index.scss";
-import "../../../assets/scss/index.scss";
-import { Mail, TelephoneIcon, Geolocation } from "Assets/icons/index.js";
-import "bootstrap";
 
 export const StudyDirectionCard = ({
   icon,

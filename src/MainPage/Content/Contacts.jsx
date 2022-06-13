@@ -1,7 +1,7 @@
 import React from "react";
 import { v4 as uuid4 } from "uuid";
 import { Row, Col } from "react-bootstrap";
-import { StudyDirectionCard } from "Components/StudyDirectionCard/index.jsx";
+import { StudyDirectionCard } from "@components/StudyDirectionCard/index.jsx";
 import { contactsData } from "./cardsData.js";
 
 export const Contacts = () => {

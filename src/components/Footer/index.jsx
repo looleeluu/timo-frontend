@@ -6,7 +6,7 @@ import {
   Vkontakte,
   TelephoneFill,
   MailFill,
-} from "Assets/icons/index.js";
+} from "@assets/icons/index.js";
 import "./index.scss";
 
 export const Footer = () => {

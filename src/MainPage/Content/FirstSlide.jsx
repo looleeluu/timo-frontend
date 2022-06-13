@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
-import image from "Assets/images/main__first_slide.png";
+import image from "@assets/images/main__first_slide.png";
 import "./index.scss";
 
 export const FirstSlide = () => {

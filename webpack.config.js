@@ -27,11 +27,6 @@ module.exports = (env) => {
       },
     },
     entry: [path.join(PATH_SOURCE, "./index.js")],
-    output: {
-      path: PATH_DIST,
-      filename: "js/[name].[contenthash].js",
-      publicPath: "/",
-    },
     module: {
       rules: [
         {
@@ -92,9 +87,14 @@ module.exports = (env) => {
     ],
     resolve: {
       alias: {
-        Assets: path.resolve(__dirname, "assets"),
-        Components: path.resolve(__dirname, "src/components"),
+        "@assets": path.resolve(__dirname, "assets"),
+        "@components": path.resolve(__dirname, "src/components"),
       },
+    },
+    output: {
+      path: PATH_DIST,
+      filename: "[bundle].js",
+      clean: true,
     },
   };
 };

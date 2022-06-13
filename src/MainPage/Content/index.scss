@@ -1,4 +1,4 @@
-@import "Assets/scss/variables.scss";
+@import "@assets/scss/variables.scss";
 
 .main-text {
   font-size: 28px;
@@ -18,6 +18,6 @@
   }
 }
 
-.gradient-bg {
-  background: linear-gradient($dark, $purple, $dark);
+.greetings-background {
+  background-image: url("@assets/images/main__1_spot.png");
 }

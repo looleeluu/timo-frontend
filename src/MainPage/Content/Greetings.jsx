@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { MainLogo } from "Assets/icons/index.js";
+import { MainLogo } from "@assets/icons/index.js";
 import "./index.scss";
 
 export const Greetings = () => {
@@ -25,7 +25,7 @@ export const Greetings = () => {
             САЙТ УНИВЕРСИТЕТА
           </Button>
         </Col>
-        <Col>
+        <Col className="greetings-background">
           <MainLogo />
         </Col>
       </Row>
