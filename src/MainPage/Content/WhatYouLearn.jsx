@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { Question } from "@assets/icons/index.js";
+import { Question } from "@assets/icons";
 
 export const WhatYouLearn = () => {
   return (

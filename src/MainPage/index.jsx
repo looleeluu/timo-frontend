@@ -1,7 +1,5 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { Header } from "@components/Header/index.jsx";
-import { Footer } from "@components/Footer/index.jsx";
 import {
   Greetings,
   FirstSlide,
@@ -9,13 +7,12 @@ import {
   WhatYouLearn,
   Contacts,
   DeanOffice,
-} from "./Content/index.js";
+} from "./Content";
 import "@assets/scss/index.scss";
 
 export const MainPage = () => {
   return (
     <>
-      <Header />
       <Greetings />
       <Container>
         <FirstSlide />
@@ -24,7 +21,6 @@ export const MainPage = () => {
         <Contacts />
         <DeanOffice />
       </Container>
-      <Footer />
     </>
   );
 };

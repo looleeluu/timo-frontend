@@ -1,9 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { MiniLogo, HomeIcon, TelephoneIcon } from "@assets/icons/index.js";
+import { MiniLogo, HomeIcon, TelephoneIcon } from "@assets/icons";
+
 import "./index.scss";
 
-export const Header = () => {
+export const Header = (props) => {
+  const { onHeaderItemClick } = props;
+
   return (
     <header>
       <Container className="header">
@@ -18,13 +21,22 @@ export const Header = () => {
               }}
             >
               <Col>
-                <div className="icon-block">
+                <div
+                  className="icon-block"
+                  style={{ cursor: "pointer" }}
+                  onClick={() => onHeaderItemClick("mainPage")}
+                >
                   <HomeIcon />
                   <span style={{ paddingLeft: 7 }}>ГЛАВНАЯ</span>
                 </div>
               </Col>
               <Col>
-                <span className="ps-3">НОВОСТИ</span>
+                <div
+                  style={{ cursor: "pointer" }}
+                  onClick={() => onHeaderItemClick("news")}
+                >
+                  <span className="ps-3">НОВОСТИ</span>
+                </div>
               </Col>
               <Col md={2}>
                 <span>ФОТО</span>

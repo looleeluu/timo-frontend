@@ -90,6 +90,7 @@ module.exports = (env) => {
         "@assets": path.resolve(__dirname, "assets"),
         "@components": path.resolve(__dirname, "src/components"),
       },
+      extensions: [".js", ".jsx"],
     },
     output: {
       path: PATH_DIST,

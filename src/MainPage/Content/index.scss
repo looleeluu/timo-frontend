@@ -5,19 +5,6 @@
   font-weight: 400;
 }
 
-.purple-btn {
-  background-color: $purple;
-  border: unset;
-
-  &:hover {
-    background-color: $purple-light;
-  }
-
-  &:focus {
-    background-color: $purple-lighter;
-  }
-}
-
 .greetings-background {
   background-image: url("@assets/images/main__1_spot.png");
 }

@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Tassel,
-  Sun,
-  CameraReels,
-  Network,
-  Microphone,
-} from "@assets/icons/index.js";
+import { Tassel, Sun, CameraReels, Network, Microphone } from "@assets/icons";
 import dubover from "@assets/images/1-dubover.png";
 import ushenko from "@assets/images/2-ushenko.png";
 import khristuk from "@assets/images/3-khristuk.png";

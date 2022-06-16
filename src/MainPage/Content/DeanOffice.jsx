@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { v4 as uuid4 } from "uuid";
 import { deanOffice } from "./cardsData";
-import { EmployeeCard } from "@components/EmployeeCard/index.jsx";
+import { EmployeeCard } from "@components/EmployeeCard";
 
 export const DeanOffice = () => {
   return (

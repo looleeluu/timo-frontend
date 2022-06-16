@@ -15,3 +15,4 @@ export { Vkontakte } from "./Vkontakte.jsx";
 export { Pinterest } from "./Pinterest.jsx";
 export { TelephoneFill } from "./TelephoneFill.jsx";
 export { MailFill } from "./MailFill.jsx";
+export { ArrowRight } from "./ArrowRight";

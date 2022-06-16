@@ -1,6 +1,6 @@
-export { FirstSlide } from "./FirstSlide.jsx";
-export { SecondSlide } from "./SecondSlide.jsx";
-export { Greetings } from "./Greetings.jsx";
-export { WhatYouLearn } from "./WhatYouLearn.jsx";
-export { Contacts } from "./Contacts.jsx";
-export { DeanOffice } from "./DeanOffice.jsx";
+export { FirstSlide } from "./FirstSlide";
+export { SecondSlide } from "./SecondSlide";
+export { Greetings } from "./Greetings";
+export { WhatYouLearn } from "./WhatYouLearn";
+export { Contacts } from "./Contacts";
+export { DeanOffice } from "./DeanOffice";

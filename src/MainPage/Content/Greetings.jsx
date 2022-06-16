@@ -21,7 +21,7 @@ export const Greetings = () => {
             и готовых к постоянному саморазвитию профессионалов в
             медиакоммуникациях и мультимедийных технологиях.
           </p>
-          <Button style={{ marginTop: 88 }} size="lg" className="purple-btn">
+          <Button style={{ marginTop: 88 }} size="lg">
             САЙТ УНИВЕРСИТЕТА
           </Button>
         </Col>

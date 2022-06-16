@@ -1,8 +1,8 @@
 import React from "react";
 import { v4 as uuid4 } from "uuid";
 import { Row, Col } from "react-bootstrap";
-import { StudyDirectionCard } from "@components/StudyDirectionCard/index.jsx";
-import { contactsData } from "./cardsData.js";
+import { StudyDirectionCard } from "@components/StudyDirectionCard";
+import { contactsData } from "./cardsData";
 
 export const Contacts = () => {
   return (
