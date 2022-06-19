@@ -5,6 +5,16 @@
   font-weight: 400;
 }
 
+.main-button {
+  margin-top: 88px;
+}
+
 .greetings-background {
   background-image: url("@assets/images/main__1_spot.png");
+}
+
+.purple-h {
+  font-size: 48px;
+  font-family: "Asgard Trial Wide Medium", Helvetica, sans-serif;
+  color: $purple-lighter;
 }

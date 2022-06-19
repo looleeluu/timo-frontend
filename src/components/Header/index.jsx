@@ -5,7 +5,8 @@ import { MiniLogo, HomeIcon, TelephoneIcon } from "@assets/icons";
 import "./index.scss";
 
 export const Header = (props) => {
-  const { onHeaderItemClick } = props;
+  const { currentPage, onHeaderItemClick } = props;
+  const isActivePage = (page) => (page === currentPage ? "active" : "");
 
   return (
     <header>
@@ -22,8 +23,9 @@ export const Header = (props) => {
             >
               <Col>
                 <div
-                  className="icon-block"
-                  style={{ cursor: "pointer" }}
+                  className={`icon-block header-title ${isActivePage(
+                    "mainPage"
+                  )}`}
                   onClick={() => onHeaderItemClick("mainPage")}
                 >
                   <HomeIcon />
@@ -32,24 +34,30 @@ export const Header = (props) => {
               </Col>
               <Col>
                 <div
-                  style={{ cursor: "pointer" }}
+                  className={`header-title ${isActivePage("news")}`}
                   onClick={() => onHeaderItemClick("news")}
                 >
-                  <span className="ps-3">НОВОСТИ</span>
+                  <span>НОВОСТИ</span>
                 </div>
               </Col>
-              <Col md={2}>
-                <span>ФОТО</span>
-              </Col>
               <Col>
-                <span className="ps-3">ВИДЕО</span>
+                <div
+                  className={`header-title ${isActivePage("photo")}`}
+                  onClick={() => onHeaderItemClick("photo")}
+                >
+                  <span>ФОТО</span>
+                </div>
               </Col>
             </Row>
           </Col>
           <Col md={{ offset: 2, span: 3 }} style={{ paddingTop: "38px" }}>
             <div className="icon-block">
               <TelephoneIcon />
-              <span style={{ paddingLeft: 7 }}>238-13-49, 273-83-49</span>
+              <div style={{ paddingLeft: 7 }}>
+                <a href="tel:238-13-49">238-13-49</a>
+                {", "}
+                <a href="tel:273-83-49">273-83-49</a>
+              </div>
             </div>
           </Col>
         </Row>

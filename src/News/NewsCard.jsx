@@ -12,7 +12,6 @@ export const NewsCard = ({
   newsIndex,
   maxIndex,
 }) => {
-  console.log(newsIndex, maxIndex);
   return (
     <>
       <Row style={{ marginTop: 80, marginBottom: 80 }}>

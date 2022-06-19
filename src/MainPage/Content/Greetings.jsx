@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
-import { MainLogo } from "@assets/icons/index.js";
+import { Container, Row, Col, Button, Image } from "react-bootstrap";
+import mainPhoto from "@assets/images/main__logo.png";
 import "./index.scss";
 
 export const Greetings = () => {
@@ -21,12 +21,16 @@ export const Greetings = () => {
             и готовых к постоянному саморазвитию профессионалов в
             медиакоммуникациях и мультимедийных технологиях.
           </p>
-          <Button style={{ marginTop: 88 }} size="lg">
+          <Button
+            className="main-button"
+            size="lg"
+            href="https://donstu.ru/structure/science-education/mediakommunikatsii-i-multimediynye-tekhnologii/"
+          >
             САЙТ УНИВЕРСИТЕТА
           </Button>
         </Col>
         <Col className="greetings-background">
-          <MainLogo />
+          <Image src={mainPhoto} />
         </Col>
       </Row>
     </Container>

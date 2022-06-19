@@ -4,7 +4,7 @@ import { Question } from "@assets/icons";
 
 export const WhatYouLearn = () => {
   return (
-    <Row style={{ marginTop: 250 }}>
+    <Row style={{ marginTop: 280 }}>
       <Col md={{ span: 4 }}>
         <Question />
       </Col>

@@ -9,6 +9,18 @@
     color: black;
   }
 
+  a {
+    padding-left: 8px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+
   .footer-title {
     font-weight: 550;
     font-size: 24px;
@@ -18,12 +30,6 @@
   .footer-contacts {
     div {
       padding-bottom: 24px;
-    }
-
-    p {
-      font-weight: 700;
-      font-size: 20px;
-      padding-left: 8px;
     }
   }
 }

@@ -29,15 +29,19 @@ export const Footer = () => {
               <div className="d-flex flex-column">
                 <div className="d-flex">
                   <Telegram />
-                  <p>Официальный Telegram-канал МКиМТ</p>
+                  <a href="https://t.me/s/mkmt_media">
+                    Официальный Telegram-канал МКиМТ
+                  </a>
                 </div>
                 <div className="d-flex">
                   <Vkontakte />
-                  <p>Сообщество VK</p>
+                  <a href="https://vk.com/mkmt.media">Сообщество VK</a>
                 </div>
                 <div className="d-flex">
                   <Pinterest />
-                  <p>Аккаунт МКиМТ | Pinterest</p>
+                  <a href="https://www.pinterest.ru/mkmt_media/_created/">
+                    Аккаунт МКиМТ | Pinterest
+                  </a>
                 </div>
               </div>
             </div>
@@ -47,11 +51,12 @@ export const Footer = () => {
             <div className="footer-contacts">
               <div className="d-flex ">
                 <TelephoneFill />
-                <p>238-13-49, 273-83-49</p>
+                <a href="tel:238-13-49">238-13-49</a>,{" "}
+                <a href="tel:273-83-49">273-83-49</a>
               </div>
               <div className="d-flex">
                 <MailFill />
-                <p>spu-49@donstu.ru</p>
+                <a href="mailto:spu-49@donstu.ru">spu-49@donstu.ru</a>
               </div>
             </div>
           </Col>

@@ -7,7 +7,7 @@ import { EmployeeCard } from "@components/EmployeeCard";
 export const DeanOffice = () => {
   return (
     <>
-      <Row style={{ marginTop: 380 }}>
+      <Row style={{ marginTop: 240 }}>
         <Col style={{ marginBottom: 88 }}>
           <h1>ДЕКАНАТ</h1>
         </Col>

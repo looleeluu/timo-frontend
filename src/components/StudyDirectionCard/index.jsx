@@ -6,6 +6,7 @@ import "./index.scss";
 export const StudyDirectionCard = ({
   icon,
   title,
+  tel,
   contacts,
   email,
   address,
@@ -20,13 +21,18 @@ export const StudyDirectionCard = ({
             <span className="pe-1">
               <TelephoneIcon />
             </span>
-            <p className="lh-base">{contacts}</p>
+            <p className="lh-base">
+              <a href={`tel:${tel}`}>{tel}</a>
+              {contacts}
+            </p>
           </div>
           <div style={{ display: "flex", paddingBottom: 10 }}>
             <span className="pe-1">
               <Mail />
             </span>
-            <p>{email}</p>
+            <p>
+              <a href={`mailto:${email}`}>{email}</a>
+            </p>
           </div>
           <div style={{ display: "flex" }}>
             <span className="pe-1">

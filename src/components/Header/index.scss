@@ -2,11 +2,36 @@
 
 .header {
   margin-top: 40px;
+
+  a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $purple-lighter;
+    }
+  }
 }
 
 .icon-block {
   display: flex;
   align-items: baseline;
+}
+
+.header-title {
+  cursor: pointer;
+  text-align: center;
+
+  span {
+    &:hover {
+      color: $purple-lighter
+    }
+  }
+}
+
+.active {
+  border-bottom: 3px solid $purple-lighter;
 }
 
 span {
