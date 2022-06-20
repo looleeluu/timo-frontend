@@ -27,7 +27,7 @@ export const Photo = () => {
       .get("http://localhost/photos/", {
         headers: { "Access-Control-Allow-Origin": "*" },
       })
-      .then((res) => setPhotoData(res))
+      .then((res) => setPhotoData(res.data))
       .catch((e) => console.log(e));
   }, []);
 
