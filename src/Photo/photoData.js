@@ -14,6 +14,7 @@ import photo13 from "@assets/images/photo__13.png";
 import photo14 from "@assets/images/photo__14.png";
 import photo15 from "@assets/images/photo__15.png";
 import photo16 from "@assets/images/photo__16.png";
+import axios from "axios";
 
 const events = {
   streetConcert: "Студенческий квартирник на футбольном поле 4.06.22",
@@ -22,69 +23,69 @@ const events = {
   discussionPlace: "День Карьеры ДГТУ. Дискуссионная площадка 18.05.22",
 };
 
-export const photoData = [
-  {
-    photoLink: photo1,
-    description: events.streetConcert,
-  },
-  {
-    photoLink: photo2,
-    description: events.streetConcert,
-  },
-  {
-    photoLink: photo3,
-    description: events.streetConcert,
-  },
-  {
-    photoLink: photo4,
-    description: events.streetConcert,
-  },
-  {
-    photoLink: photo5,
-    description: events.intensiveTraining,
-  },
-  {
-    photoLink: photo6,
-    description: events.intensiveTraining,
-  },
-  {
-    photoLink: photo7,
-    description: events.intensiveTraining,
-  },
-  {
-    photoLink: photo8,
-    description: events.bookFestival,
-  },
-  {
-    photoLink: photo9,
-    description: events.bookFestival,
-  },
-  {
-    photoLink: photo10,
-    description: events.bookFestival,
-  },
-  {
-    photoLink: photo11,
-    description: events.bookFestival,
-  },
-  {
-    photoLink: photo12,
-    description: events.discussionPlace,
-  },
-  {
-    photoLink: photo13,
-    description: events.discussionPlace,
-  },
-  {
-    photoLink: photo14,
-    description: events.discussionPlace,
-  },
-  {
-    photoLink: photo15,
-    description: events.discussionPlace,
-  },
-  {
-    photoLink: photo16,
-    description: events.discussionPlace,
-  },
-];
+// export const photoData = [
+//   {
+//     photoLink: photo1,
+//     description: events.streetConcert,
+//   },
+//   {
+//     photoLink: photo2,
+//     description: events.streetConcert,
+//   },
+//   {
+//     photoLink: photo3,
+//     description: events.streetConcert,
+//   },
+//   {
+//     photoLink: photo4,
+//     description: events.streetConcert,
+//   },
+//   {
+//     photoLink: photo5,
+//     description: events.intensiveTraining,
+//   },
+//   {
+//     photoLink: photo6,
+//     description: events.intensiveTraining,
+//   },
+//   {
+//     photoLink: photo7,
+//     description: events.intensiveTraining,
+//   },
+//   {
+//     photoLink: photo8,
+//     description: events.bookFestival,
+//   },
+//   {
+//     photoLink: photo9,
+//     description: events.bookFestival,
+//   },
+//   {
+//     photoLink: photo10,
+//     description: events.bookFestival,
+//   },
+//   {
+//     photoLink: photo11,
+//     description: events.bookFestival,
+//   },
+//   {
+//     photoLink: photo12,
+//     description: events.discussionPlace,
+//   },
+//   {
+//     photoLink: photo13,
+//     description: events.discussionPlace,
+//   },
+//   {
+//     photoLink: photo14,
+//     description: events.discussionPlace,
+//   },
+//   {
+//     photoLink: photo15,
+//     description: events.discussionPlace,
+//   },
+//   {
+//     photoLink: photo16,
+//     description: events.discussionPlace,
+//   },
+// ];
