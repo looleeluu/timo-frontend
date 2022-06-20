@@ -24,7 +24,7 @@ export const Photo = () => {
   const [photoData, setPhotoData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost/photos").then((res) => setPhotoData(res));
+    axios.get("http://localhost/photos/").then((res) => setPhotoData(res));
   }, []);
 
   return (
