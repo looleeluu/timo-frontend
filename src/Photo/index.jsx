@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { v4 as uuid4 } from "uuid";
 import axios from "axios";
-import { photoData } from "./photoData";
 
 const photoContainerStyle = {
   display: "flex",
@@ -24,7 +23,12 @@ export const Photo = () => {
   const [photoData, setPhotoData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost/photos/").then((res) => setPhotoData(res));
+    axios
+      .get("http://localhost/photos/", {
+        headers: { "Access-Control-Allow-Origin": "*" },
+      })
+      .then((res) => setPhotoData(res))
+      .catch((e) => console.log(e));
   }, []);
 
   return (
