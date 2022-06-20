@@ -39,9 +39,6 @@ export const Photo = () => {
     loadData();
   }, []);
 
-  console.log(loadingStatus);
-  console.log(photoData);
-
   return (
     <Container style={{ marginTop: 72 }}>
       <Row>
