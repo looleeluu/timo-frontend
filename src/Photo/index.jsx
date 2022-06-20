@@ -36,12 +36,13 @@ export const Photo = () => {
       </Row>
       <Row>
         <Col style={photoContainerStyle}>
-          {photoData.map(({ image, description }) => (
-            <div style={photoCardStyle} key={uuid4()}>
-              <Image src={image} style={{ marginBottom: 16 }} />
-              <p style={descriptionStyle}>{description}</p>
-            </div>
-          ))}
+          {photoData &&
+            photoData.map(({ image, description }) => (
+              <div style={photoCardStyle} key={uuid4()}>
+                <Image src={image} style={{ marginBottom: 16 }} />
+                <p style={descriptionStyle}>{description}</p>
+              </div>
+            ))}
         </Col>
       </Row>
     </Container>
