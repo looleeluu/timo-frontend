@@ -56,7 +56,7 @@ export const Photo = () => {
                   <div style={photoCardStyle} key={uuid4()}>
                     <Image
                       src={image}
-                      style={{ marginBottom: 16 }}
+                      style={{ marginBottom: 16, cursor: "pointer" }}
                       width={356}
                       height={238}
                       onClick={openImageViewer(index)}
