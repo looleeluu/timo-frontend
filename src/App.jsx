@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ReactCSStransitionGroup from "react-addons-css-transition-group";
-import { Header } from "@components/Header";
-import { Footer } from "@components/Footer";
+import { Header, Footer } from "@components";
 import { MainPage } from "./MainPage";
 import { News } from "./News";
 import { Photo } from "./Photo";

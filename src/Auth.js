@@ -2,12 +2,12 @@ import axios from "axios";
 
 const URL = "http://localhost";
 
-const instance = axios.create({
+const axiosInstance = axios.create({
   baseURL: URL,
-  timeout: 1000,
+  timeout: 3000,
   headers: {
     "Access-Control-Allow-Origin": "*",
   },
 });
 
-export default instance;
+export default axiosInstance;

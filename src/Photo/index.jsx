@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Image, Spinner } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { v4 as uuid4 } from "uuid";
-import services from "../Auth";
-import { ErrorView } from "../components/ErrorView";
+import { ErrorView, Spinner } from "@components";
+import { useLoadData } from "@hooks/useLoadData";
 
 const photoContainerStyle = {
   display: "flex",
@@ -21,23 +21,7 @@ const descriptionStyle = {
 };
 
 export const Photo = () => {
-  const [photoData, setPhotoData] = useState([]);
-  const [loadingStatus, setLoadingStatus] = useState("resolved");
-
-  const loadData = async () => {
-    setLoadingStatus("pending");
-    try {
-      const res = await services.get("/photos/");
-      setPhotoData(res.data);
-      setLoadingStatus("resolved");
-    } catch (e) {
-      setLoadingStatus("rejected");
-    }
-  };
-
-  useEffect(() => {
-    loadData();
-  }, []);
+  const [loadingStatus, photos, reload] = useLoadData("/photos/");
 
   return (
     <Container style={{ marginTop: 72 }}>
@@ -46,15 +30,15 @@ export const Photo = () => {
           <h1>ФОТО</h1>
         </Col>
       </Row>
-      {loadingStatus === "rejected" && <ErrorView reload={loadData} />}
+      {loadingStatus === "rejected" && <ErrorView reload={reload} />}
       {loadingStatus === "pending" && (
         <Spinner animation="grow" variant="light" />
       )}
       {loadingStatus === "resolved" && (
         <Row>
           <Col style={photoContainerStyle}>
-            {photoData &&
-              photoData.map(({ image, description }) => (
+            {photos &&
+              photos.map(({ image, description }) => (
                 <div style={photoCardStyle} key={uuid4()}>
                   <Image
                     src={image}
